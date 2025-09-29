@@ -1,0 +1,139 @@
+.acara {
+  margin-top: calc(-1rem + -40px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+
+  --_gap: 1rem;
+}
+.acara::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/bgBiru.jpg);
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  filter: opacity(0.25);
+}
+
+.acara .halo {
+  margin-block: 2rem 3rem;
+}
+
+.mempelai {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--_gap);
+}
+
+.karakter {
+  display: flex;
+  gap: var(--_gap);
+}
+
+.karakter img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nama {
+  margin-block: var(--_gap);
+  display: flex;
+  flex-direction: column;
+  gap: var(--_gap);
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.nama h3 {
+  font-size: 2.5rem;
+  font-family: var(--font-secundery);
+  color: var(--color-blue1);
+  font-weight: 500;
+}
+
+.nama h5 {
+  font-weight: bold;
+  text-decoration: underline 1.5px;
+}
+
+.nama h4 {
+  line-height: 1.5;
+}
+
+.nama h6 {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.6rem;
+  line-height: 1.25;
+}
+.hinata h6 {
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+.terima-kasih {
+  margin-top: 3rem;
+  place-content: center;
+  text-align: center;
+}
+
+.informasi {
+  margin-top: 1rem;
+  margin-inline: 1rem;
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  gap: 2rem;
+}
+
+.informasi > div {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+.informasi > div > p {
+  font-size: 0.75rem;
+}
+
+.informasi .icon {
+  font-size: 1.5rem;
+}
+
+.informasi .icon p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.lokasi-peta a {
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+}
+.lokasi-peta a:hover {
+  color: var(--color-blue1);
+}
+.lokasi-peta a span {
+  font-size: 1.5rem;
+}

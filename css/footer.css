@@ -1,0 +1,33 @@
+footer {
+  /* border: 2px solid red; */
+  background: linear-gradient(360deg, #fff, #e1feff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 2rem;
+  text-align: center;
+  gap: 2rem;
+  .kata {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    color: #000;
+    & > p:first-child {
+      font-size: 110%;
+      & * {
+        font-size: 150%;
+      }
+    }
+  }
+  .create {
+    font-family: "Courier New", Courier, monospace;
+    border-top: 1px dotted black;
+    padding-top: 0.25rem;
+    font-size: 0.75rem;
+    a {
+      color: inherit;
+    }
+  }
+}

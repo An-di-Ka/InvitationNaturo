@@ -1,0 +1,36 @@
+.simply-countdown {
+  font-family: "montserrat", sans-serif;
+
+  margin-top: 2rem;
+  border-radius: 10px;
+  color: rgb(101, 125, 145);
+  background-color: rgba(240, 248, 255, 0.75);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  text-shadow: none;
+
+  display: flex;
+}
+
+.simply-countdown > .simply-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 7rem;
+  padding: 20px;
+}
+
+.simply-countdown > .simply-section .simply-word {
+  font-size: 0.9rem;
+}
+
+.simply-countdown > .simply-section .simply-amount {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-right: 7px;
+}
+
+@media (max-width: 930px) {
+  html {
+    font-size: 75%;
+  }
+}

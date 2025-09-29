@@ -1,0 +1,116 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  /* --color-blue1: #84c4d8; */
+  --color-blue1: #5ea3b8;
+  --color-blue2: #c6e7ff;
+  --color-aqua: #d4f6ff;
+  --color-white: #fbfbfb;
+  --color-yellow: #ffddae;
+  --font-secundery: "sacramento", cursive;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "montserrat", sans-serif;
+}
+
+section {
+  padding-block: 5rem;
+}
+
+.judul-section {
+  grid-column-start: 2;
+  grid-column-end: -2;
+  text-align: center;
+  font-family: var(--font-secundery);
+  font-size: 4rem;
+  color: var(--color-blue1);
+  line-height: 1.5;
+  text-shadow: 0.5px 0.5px 3px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  line-height: 1.5;
+  font-size: 0.9rem;
+  color: rgb(14, 14, 14);
+}
+
+/* Media Screen */
+@media screen and (min-width: 1400px) {
+  html {
+    font-size: 125%;
+  }
+  .acara {
+    margin-top: calc(-1rem + -50px);
+  }
+}
+
+@media (max-width: 960px) {
+  html {
+    font-size: 75%;
+  }
+
+  .karakter img {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* Hamburger star */
+
+  .hamburger {
+    height: 17px;
+    width: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .hamburger span {
+    width: 100%;
+    height: 2px;
+    border-radius: 3px;
+    background-color: rgb(71, 89, 103);
+  }
+
+  .nav-items {
+    --gap: 2rem;
+    position: absolute;
+    top: calc(40px + 1rem);
+    right: 0;
+    background-color: rgba(240, 248, 255, 1);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    border: 1px solid #bbb;
+    border-radius: 15px;
+    padding: var(--gap) 0;
+    flex-direction: column;
+    gap: var(--gap);
+    transition: 0.2s;
+    li {
+      a {
+        display: block;
+        font-size: 1rem;
+      }
+    }
+
+    visibility: hidden;
+    opacity: 0;
+
+    &.active-items {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  /* Hamburger End */
+}
