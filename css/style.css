@@ -1,3 +1,9 @@
+@import "nav.css";
+@import "header.css";
+@import "acara.css";
+@import "galeri.css";
+@import "footer.css";
+
 *,
 ::after,
 ::before {
